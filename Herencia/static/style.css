@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+nav {
+    background-color: pink
+
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li {
+    padding: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+    min-height: 80vh;
+}
+
+footer {
+    color: black;
+    background: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 50px;
+}

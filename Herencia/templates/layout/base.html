@@ -1,0 +1,27 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <link rel="stylesheet" href="{% static 'style.css' %}">
+    {% block style %}{% endblock%}
+    <title>{% block title %}{% endblock%}</title>
+</head>
+<body>
+  <nav>
+    <ul>
+       <h3>Logo</h3>
+      <li><a href="#">Herencia</a></li>
+      <li><a href="#">Ejemplo</a></li>
+      <li><a href="#">Otra</a></li>
+    </ul>
+  </nav>
+  <main>
+    {% block content %}{% endblock%}
+  </main>
+    <footer>
+      <p>Todos los derechos reservados</p>
+    </footer>
+    {% block scripts %}{% endblock%}
+</body>
+</html>
