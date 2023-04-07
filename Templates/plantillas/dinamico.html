@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Templates en Django</title>
+</head>
+<body>
+    <h1>Hola {{name}}</h1>
+    <h3>Categorias</h3>
+    <ul>
+        {% for i in categories %}
+            {%if i == 'Code' %}
+                <li><b>{{ i|upper }}</b></li>
+            {% else %}
+                <li>{{ i }}</li>
+            {% endif %}
+        {% endfor %}
+        <h5>Total de categorias: {{categories|length}}</h5>
+    </ul>
+</body>
+</html>
