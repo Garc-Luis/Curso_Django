@@ -1,0 +1,73 @@
+:root{
+    --color-primary: #ffce00;
+    --color-secondary: #ffa300;
+    --color-text: #707789;
+    --color-bg: #dedede;
+    --font-title: SoulBillani;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+nav {
+    display: flex;
+    background-color: #33FFF2;
+    width: 100vw;
+    justify-content: left;
+    align-items: center;
+    height: 100px
+}
+
+nav img{
+    margin: 10px
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul li {
+    padding: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+    color: #1B2D2C;
+    font-family: var(--font-title)
+
+}
+
+nav ul li a:hover {
+    color: white;
+}
+@font-face{
+    font-family: SoulBillani;
+    src: url('../font/SoulBillani.otf');
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+    min-height: 80vh;
+    font-family: var(--font-title);
+}
+
+footer {
+    color: black;
+    background: #33FFF2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 30px;
+    font-family: var(--font-title);
+}

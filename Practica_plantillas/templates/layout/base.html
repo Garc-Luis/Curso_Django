@@ -3,12 +3,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-   <link rel="stylesheet" href="{% static 'style.css' %}">
+   <link rel="stylesheet" href="{% static 'css/style.css' %}">
     {% block style %}{% endblock%}
     <title>{% block title %}{% endblock%}</title>
 </head>
 <body>
-  {% include 'layout/menu.html' %}
+    <header>
+        {% include 'layout/menu.html' %}
+    </header>
   <main>
     {% block content %}{% endblock%}
   </main>
